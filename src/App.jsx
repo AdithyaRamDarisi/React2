@@ -86,12 +86,49 @@
 
 // export default App
 
-import React from 'react'
-import Userpage from './FetchAPI/Userpage'
+// import React from 'react'
+// import Userpage from './FetchAPI/Userpage'
 
-function App() {
+// function App() {
+//   return (
+//     <div><Userpage/></div>
+//   )
+// }
+
+// export default App
+
+// import React from 'react'
+// import Ciruit from './Circuit/Ciruit'
+// import MultiState from './useReducer/MultiState'
+
+// function App() {
+//   return (
+//     <div>
+//       <MultiState/>
+//     </div>
+//   )
+// }
+
+// export default App
+import React from 'react'
+import Firstpage from './Routing/Firstpage'
+import SecondPage from './Routing/SecondPage'
+import ThirdPage from './Routing/ThirdPage'
+import FourthPage from './Routing/FourthPage'
+import { Routes,Route } from 'react-router-dom'
+
+const App = () => {
   return (
-    <div><Userpage/></div>
+    <div>
+      <Routes>
+        <Route path='/abc' element = {<h1><Firstpage/></h1>}/>
+        <Route path='/xyz' element = {<h1><SecondPage/></h1>}/>
+      </Routes>
+      {/* <Firstpage/>
+      <SecondPage/>
+      <ThirdPage/>
+      <FourthPage/> */}
+    </div>
   )
 }
 
