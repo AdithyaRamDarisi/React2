@@ -1,0 +1,12 @@
+.navSection{
+    border:1px solid red;
+    background-color:darkgrey;
+    color: blue;
+    display:flex;
+    justify-content: space-evenly;
+}
+.navSection ul li{
+      display: inline-flex;
+      margin: 20px;
+      font-size: xx-large;
+}

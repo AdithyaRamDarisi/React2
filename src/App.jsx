@@ -116,13 +116,18 @@ import SecondPage from './Routing/SecondPage'
 import ThirdPage from './Routing/ThirdPage'
 import FourthPage from './Routing/FourthPage'
 import { Routes,Route } from 'react-router-dom'
+import Navbar from './Navbar'
+import "./App.css";
 
 const App = () => {
   return (
     <div>
+      <Navbar/>
       <Routes>
-        <Route path='/abc' element = {<h1><Firstpage/></h1>}/>
-        <Route path='/xyz' element = {<h1><SecondPage/></h1>}/>
+        <Route path='/adithya' element = {<h1><Firstpage/></h1>}/>
+        <Route path='/ram' element = {<h1><SecondPage/></h1>}/>
+        <Route path='/saran' element = {<h1><ThirdPage/></h1>}/>
+        <Route path='/sai' element = {<h1><FourthPage/></h1>}/>
       </Routes>
       {/* <Firstpage/>
       <SecondPage/>
