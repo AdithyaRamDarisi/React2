@@ -1,0 +1,144 @@
+.app {
+  min-height: 100vh;
+}
+
+.header {
+  background: #1e293b;
+  color: white;
+  text-align: center;
+  padding: 35px 20px;
+}
+
+.header h1 {
+  margin-bottom: 10px;
+  font-size: 32px;
+}
+
+.header p {
+  color: #cbd5e1;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+.controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.controls input,
+.controls select {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+.controls button,
+.error button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.controls button:hover,
+.error button:hover {
+  background: #1d4ed8;
+}
+
+.count {
+  margin-bottom: 20px;
+  color: #334155;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.user-card {
+  background: white;
+  padding: 22px;
+  border-radius: 10px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.06);
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  background: #2563eb;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.user-card h2 {
+  color: #1e293b;
+  margin-bottom: 15px;
+}
+
+.user-card p {
+  margin: 10px 0;
+  color: #475569;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+.user-card a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.user-card a:hover {
+  text-decoration: underline;
+}
+
+.message {
+  text-align: center;
+  margin: 40px;
+  color: #475569;
+}
+
+.error {
+  text-align: center;
+  color: red;
+  padding: 20px;
+}
+
+@media (max-width: 900px) {
+  .user-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+  }
+
+  .user-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+}
