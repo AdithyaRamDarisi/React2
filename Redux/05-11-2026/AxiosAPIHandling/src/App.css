@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 25px;
+}
+
+h1 {
+    text-align: center;
+    color: #1e293b;
+}
+
+.subtitle {
+    text-align: center;
+    margin: 12px 0 30px;
+    color: #64748b;
+}
+
+h2 {
+    margin-bottom: 18px;
+    color: #1e293b;
+}
+
+.form-container {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+form {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+input,
+select {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+form input,
+form select {
+    flex: 1;
+    min-width: 180px;
+}
+
+button {
+    padding: 12px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #2563eb;
+    color: white;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.cancel-btn {
+    background: #64748b;
+}
+
+.controls {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.controls input {
+    flex: 1;
+}
+
+.controls select {
+    min-width: 180px;
+}
+
+.user-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.user-card {
+    background: white;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #00000010;
+}
+
+.user-card h3 {
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.user-card p {
+    color: #64748b;
+    margin-bottom: 12px;
+}
+
+.user-card span {
+    display: inline-block;
+    background: #dbeafe;
+    color: #1d4ed8;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 18px;
+}
+
+.edit-btn {
+    background: #16a34a;
+}
+
+.delete-btn {
+    background: #dc2626;
+}
+
+.success {
+    color: #15803d;
+    margin: 15px 0;
+}
+
+.error {
+    color: #dc2626;
+    margin: 15px 0;
+}
+
+.loading {
+    color: #2563eb;
+    margin: 15px 0;
+}
+
+.empty {
+    text-align: center;
+    padding: 25px;
+    color: #64748b;
+}
+
+.total {
+    margin-top: 25px;
+    font-weight: bold;
+    color: #334155;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        padding: 15px;
+    }
+
+    .user-list {
+        grid-template-columns: 1fr;
+    }
+
+    .controls {
+        flex-direction: column;
+    }
+
+    form {
+        flex-direction: column;
+    }
+
+}
