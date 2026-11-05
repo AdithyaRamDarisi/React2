@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Adithya",
+      "email": "adithya@gmail.com",
+      "department": "Development"
+    },
+    {
+      "id": "2",
+      "name": "Rahul",
+      "email": "rahul@gmail.com",
+      "department": "Testing"
+    },
+    {
+      "id": "3",
+      "name": "Priya",
+      "email": "priya@gmail.com",
+      "department": "Design"
+    },
+    {
+      "id": "4",
+      "name": "Kiran",
+      "email": "kiran@gmail.com",
+      "department": "Development"
+    },
+    {
+      "name": "Adithya",
+      "email": "darisiadithya1432@gmail.com",
+      "department": "Development",
+      "id": "vMyNdsj"
+    },
+    {
+      "name": "Ram Charan",
+      "email": "rohithkumarm191@gmail.com",
+      "department": "Testing",
+      "id": "-BCR00M"
+    }
+  ]
+}
