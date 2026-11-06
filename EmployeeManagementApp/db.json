@@ -1,0 +1,70 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "name": "Adithya",
+      "email": "adithya@gmail.com",
+      "department": "IT",
+      "salary": 30000
+    },
+    {
+      "id": "2",
+      "name": "Rahul",
+      "email": "rahul@gmail.com",
+      "department": "HR",
+      "salary": 25000
+    },
+    {
+      "id": "3",
+      "name": "Priya",
+      "email": "priya@gmail.com",
+      "department": "Development",
+      "salary": 40000
+    },
+    {
+      "id": "4",
+      "name": "Kiran",
+      "email": "kiran@gmail.com",
+      "department": "Marketing",
+      "salary": 35000
+    },
+    {
+      "id": "5",
+      "name": "Sneha",
+      "email": "sneha@gmail.com",
+      "department": "Finance",
+      "salary": 32000
+    },
+    {
+      "id": "6",
+      "name": "Arjun",
+      "email": "arjun@gmail.com",
+      "department": "Development",
+      "salary": 45000
+    },
+    {
+      "id": "7",
+      "name": "Divya",
+      "email": "divya@gmail.com",
+      "department": "HR",
+      "salary": 28000
+    },
+    {
+      "id": "8",
+      "name": "Vikram",
+      "email": "vikram@gmail.com",
+      "department": "IT",
+      "salary": 50000
+    },
+    {
+      "name": "Ram",
+      "email": "darisiadithya1432@gmail.com",
+      "department": "Marketing",
+      "position": "Associate Engineer",
+      "status": "Active",
+      "id": "9",
+      "salary":35000
+
+    }
+  ]
+}
