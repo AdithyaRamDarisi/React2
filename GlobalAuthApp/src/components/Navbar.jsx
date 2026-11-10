@@ -1,29 +1,25 @@
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
+import { AuthContext } from "../context/AuthContext";
 
 function Navbar() {
-
-  const { theme, toggleTheme, user, logout } =
-    useContext(ThemeContext);
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { user, login, logout } = useContext(AuthContext);
 
   return (
     <nav>
-      <h2>Context API Application</h2>
+      <h2>Global Auth App</h2>
 
-      <div className="nav-actions">
-
-        <span>Theme: {theme}</span>
-
+      <div>
         <button onClick={toggleTheme}>
-          Toggle Theme
+          Switch Theme
         </button>
 
-        {user && (
-          <button onClick={logout}>
-            Logout
-          </button>
+        {user ? (
+          <button onClick={logout}>Logout</button>
+        ) : (
+          <button onClick={login}>Login</button>
         )}
-
       </div>
     </nav>
   );
