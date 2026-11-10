@@ -1,20 +1,12 @@
-import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
-
-import Login from "./Login";
 import Profile from "./Profile";
 
 function Dashboard() {
-
-  const { user, theme } = useContext(ThemeContext);
-
   return (
-    <main className={`dashboard ${theme}`}>
-
+    <main>
       <h1>Dashboard</h1>
+      <p>Welcome to the Global Authentication Application.</p>
 
-      {user ? <Profile /> : <Login />}
-
+      <Profile />
     </main>
   );
 }

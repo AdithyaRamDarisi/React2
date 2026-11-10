@@ -1,22 +1,23 @@
 import { useContext } from "react";
-import { ThemeContext } from "../context/ThemeContext";
+import { AuthContext } from "../context/AuthContext";
 
 function Profile() {
-
-  const { user } = useContext(ThemeContext);
+  const { user } = useContext(AuthContext);
 
   return (
-    <div className="card">
-
+    <section>
       <h2>User Profile</h2>
 
-      <h3>Welcome, {user.name}!</h3>
-
-      <p>Username: {user.name}</p>
-
-      <p>Authentication Status: Logged In</p>
-
-    </div>
+      {user ? (
+        <>
+          <h3>Name: {user.name}</h3>
+          <p>Email: {user.email}</p>
+          <p>Status: Logged In</p>
+        </>
+      ) : (
+        <p>Please login to view your profile.</p>
+      )}
+    </section>
   );
 }
 
